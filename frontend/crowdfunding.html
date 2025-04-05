@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdfunding | Community Bridge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .progress-bar {
+            transition: width 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-bridge text-2xl mr-2"></i>
+                    <span class="text-xl font-semibold">Community Bridge</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700">Home</a>
+                    <a href="report-issue.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700">Report Issue</a>
+                    <a href="crowdfunding.html" class="px-3 py-2 rounded-md text-sm font-medium bg-blue-800 hover:bg-blue-900">Crowdfunding</a>
+                    <a href="volunteer.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700">Volunteer</a>
+                    <a href="login.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700">Login</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Community Support</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Fund Local Improvements
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Contribute to projects that make your neighborhood better
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Active Projects -->
+    <div class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-2xl font-bold text-gray-900 mb-8">Active Projects</h3>
+            
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Project 1 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <img class="w-full h-48 object-cover" src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg" alt="Playground">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg font-medium text-gray-900">New Community Playground</h3>
+                        <p class="mt-1 text-sm text-gray-500">
+                            Help build a safe play area for children in the downtown district
+                        </p>
+                        <div class="mt-4">
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>$2,450 raised</span>
+                                <span>$5,000 goal</span>
+                            </div>
+                            <div class="mt-1 w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full progress-bar" style="width: 49%"></div>
+                            </div>
+                        </div>
+                        <div class="mt-5 flex justify-between items-center">
+                            <span class="text-sm font-medium text-gray-500">32 supporters</span>
+                            <button class="px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                Donate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <img class="w-full h-48 object-cover" src="https://images.pexels.com/photos/128402/pexels-photo-128402.jpeg" alt="Road repair">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg font-medium text-gray-900">Main Street Repairs</h3>
+                        <p class="mt-1 text-sm text-gray-500">
+                            Fix dangerous potholes on Main Street between 5th and 8th avenues
+                        </p>
+                        <div class="mt-4">
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>$1,780 raised</span>
+                                <span>$3,200 goal</span>
+                            </div>
+                            <div class="mt-1 w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full progress-bar" style="width: 56%"></div>
+                            </div>
+                        </div>
+                        <div class="mt-5 flex justify-between items-center">
+                            <span class="text-sm font-medium text-gray-500">24 supporters</span>
+                            <button class="px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                Donate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <img class="w-full h-48 object-cover" src="https://images.pexels.com/photos/4505970/pexels-photo-4505970.jpeg" alt="Community garden">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg font-medium text-gray-900">Westside Community Garden</h3>
+                        <p class="mt-1 text-sm text-gray-500">
+                            Create a green space with vegetable plots and seating areas
+                        </p>
+                        <div class="mt-4">
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>$3,210 raised</span>
+                                <span>$4,500 goal</span>
+                            </div>
+                            <div class="mt-1 w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full progress-bar" style="width: 71%"></div>
+                            </div>
+                        </div>
+                        <div class="mt-5 flex justify-between items-center">
+                            <span class="text-sm font-medium text-gray-500">45 supporters</span>
+                            <button class="px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                Donate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works -->
+    <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Transparent Funding</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    How Community Funding Works
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+                    <!-- Step 1 -->
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white mx-auto">
+                            <span class="text-xl font-bold">1</span>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="text-lg font-medium text-gray-900">Submit Project</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Community members propose improvement projects with detailed plans and budgets.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white mx-auto">
+                            <span class="text-xl font-bold">2</span>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="text-lg font-medium text-gray-900">Community Review</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Projects are reviewed by both community members and local officials for feasibility.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white mx-auto">
+                            <span class="text-xl font-bold">3</span>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="text-lg font-medium text-gray-900">Funding Phase</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Approved projects open for community contributions with transparent tracking.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white mx-auto">
+                            <span class="text-xl font-bold">4</span>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="text-lg font-medium text-gray-900">Implementation</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Funded projects are implemented with regular progress updates to the community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">About</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Our Mission</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Team</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Partners</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Resources</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Community Guidelines</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Connect</h3>
+                    <div class="mt-4 flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-base text-gray-400 text-center">
+                    &copy; 2023 Community Bridge. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
