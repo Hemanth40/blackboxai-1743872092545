@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Bridge Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-bridge text-2xl mr-2"></i>
+                    <span class="text-xl font-semibold">Community Bridge</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700">Home</a>
+                    <a href="report-issue.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700">Report Issue</a>
+                    <a href="crowdfunding.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700">Crowdfunding</a>
+                    <a href="volunteer.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700">Volunteer</a>
+                    <a href="login.html" class="px-3 py-2 rounded-md text-sm font-medium bg-blue-800 hover:bg-blue-900">Login</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-blue-700 text-white">
+        <div class="absolute inset-0">
+            <img class="w-full h-full object-cover opacity-30" src="https://images.pexels.com/photos/4505970/pexels-photo-4505970.jpeg" alt="Community helping each other">
+        </div>
+        <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                Building Better Communities Together
+            </h1>
+            <p class="mt-6 text-xl max-w-3xl">
+                Report civic issues, collaborate on solutions, and track progress in your neighborhood.
+            </p>
+            <div class="mt-10 flex flex-wrap gap-4">
+                <a href="report-issue.html" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-gray-100 md:py-4 md:text-lg md:px-10">
+                    Report an Issue
+                </a>
+                <a href="volunteer.html" class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-800 hover:bg-blue-900 md:py-4 md:text-lg md:px-10">
+                    Become a Volunteer
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Features</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    How Community Bridge Works
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Feature 1 -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                            <i class="fas fa-exclamation-triangle text-xl"></i>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="text-lg font-medium text-gray-900">Report Issues</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Easily report problems like potholes, waste management, or safety concerns in your area.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                            <i class="fas fa-users text-xl"></i>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="text-lg font-medium text-gray-900">Collaborate</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Work with neighbors and officials to find solutions through our discussion platform.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                            <i class="fas fa-hand-holding-usd text-xl"></i>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="text-lg font-medium text-gray-900">Crowdfund</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Support community projects through donations or resource sharing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Issues Section -->
+    <div class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-10">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Community Updates</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Recently Reported Issues
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Issue Card 1 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <img class="w-full h-48 object-cover" src="https://images.pexels.com/photos/128402/pexels-photo-128402.jpeg" alt="Pothole">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg font-medium text-gray-900">Pothole on Main Street</h3>
+                        <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-1.5"></i>
+                            <span>Downtown Area</span>
+                        </div>
+                        <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <i class="fas fa-exclamation-circle mr-1.5"></i>
+                            <span>High Priority</span>
+                        </div>
+                        <div class="mt-4">
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Reported 2 days ago</span>
+                                <span>15 supporters</span>
+                            </div>
+                            <div class="mt-1 w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <a href="#" class="text-sm font-medium text-blue-600 hover:text-blue-500">View details<span aria-hidden="true"> &rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Issue Card 2 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <img class="w-full h-48 object-cover" src="https://images.pexels.com/photos/128401/pexels-photo-128401.jpeg" alt="Garbage">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg font-medium text-gray-900">Garbage Pileup</h3>
+                        <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-1.5"></i>
+                            <span>Westside Neighborhood</span>
+                        </div>
+                        <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <i class="fas fa-exclamation-circle mr-1.5"></i>
+                            <span>Medium Priority</span>
+                        </div>
+                        <div class="mt-4">
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Reported 1 week ago</span>
+                                <span>32 supporters</span>
+                            </div>
+                            <div class="mt-1 w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <a href="#" class="text-sm font-medium text-blue-600 hover:text-blue-500">View details<span aria-hidden="true"> &rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Issue Card 3 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <img class="w-full h-48 object-cover" src="https://images.pexels.com/photos/288477/pexels-photo-288477.jpeg" alt="Streetlight">
+                    <div class="px-4 py-5 sm:p-6">
+                        <h3 class="text-lg font-medium text-gray-900">Broken Streetlight</h3>
+                        <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-1.5"></i>
+                            <span>Parkview Avenue</span>
+                        </div>
+                        <div class="mt-2 flex items-center text-sm text-gray-500">
+                            <i class="fas fa-exclamation-circle mr-1.5"></i>
+                            <span>Low Priority</span>
+                        </div>
+                        <div class="mt-4">
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Reported 3 days ago</span>
+                                <span>8 supporters</span>
+                            </div>
+                            <div class="mt-1 w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 20%"></div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <a href="#" class="text-sm font-medium text-blue-600 hover:text-blue-500">View details<span aria-hidden="true"> &rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="bg-blue-700">
+        <div class="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                <span class="block">Ready to make a difference?</span>
+                <span class="block">Join Community Bridge today.</span>
+            </h2>
+            <p class="mt-4 text-lg leading-6 text-blue-200">
+                Together we can build stronger, safer, and cleaner neighborhoods.
+            </p>
+            <a href="login.html" class="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 sm:w-auto">
+                Sign up for free
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">About</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Our Mission</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Team</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Partners</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Resources</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Community Guidelines</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Connect</h3>
+                    <div class="mt-4 flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-base text-gray-400 text-center">
+                    &copy; 2023 Community Bridge. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
